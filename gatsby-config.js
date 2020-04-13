@@ -1,9 +1,17 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+const path = require('path');
 
 module.exports = {
-  /* Your site config here */
-}
+  plugins: [
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-anchor-links',
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        hooks: path.join(__dirname, 'src/hooks'),
+        assets: path.join(__dirname, 'src/assets'),
+        sections: path.join(__dirname, 'src/sections'),
+        components: path.join(__dirname, 'src/components'),
+      },
+    },
+  ],
+};

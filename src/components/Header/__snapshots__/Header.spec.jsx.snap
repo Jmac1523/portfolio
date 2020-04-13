@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[component] Header renders 1`] = `
+.c0 {
+  height: 100px;
+  background-color: red;
+}
+
+<div
+  class="c0"
+  data-testid="header"
+>
+  <p>
+    Header content goes here
+  </p>
+</div>
+`;
