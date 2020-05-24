@@ -16,12 +16,14 @@ const Landing = styled.section`
 `;
 
 export default () => {
+  // NOTE: TODO - Global theme or something?
   const isSmallViewport = useMediaQuery('(max-width: 800px)');
 
   return (
     <Landing isSmallViewport={isSmallViewport}>
-      <Title />
-      {isSmallViewport ? <PortraitUp /> : <PortraitLeft />}
+      <p>Landing goes here</p>
+      {/* <Title />
+      {isSmallViewport ? <PortraitUp /> : <PortraitLeft />} */}
     </Landing>
   );
 };
